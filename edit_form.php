@@ -136,9 +136,6 @@ class block_slideshow_edit_form extends block_edit_form {
 
         $choices = array();
         $choices['fade'] = get_string('fade', 'block_slideshow');
-        $choices['slideUp'] = get_string('slideup', 'block_slideshow');
-        $choices['slideRight'] = get_string('slideright', 'block_slideshow');
-        $choices['slideDown'] = get_string('slidedown', 'block_slideshow');
         $choices['slideLeft'] = get_string('slideleft', 'block_slideshow');
         $mform->addElement('select', 'config_transition', get_string('configtransition', 'block_slideshow'), $choices);
         $mform->setDefault('config_transition', 'fade');
